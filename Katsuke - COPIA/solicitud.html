@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" href="static\img\icono-borde-celeste-fondo-gris.ico">
+    <link rel="stylesheet" href="static/css/kat.css">
+    <!-- iconos de font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo:ital@1&family=Gabarito:wght@400;900&family=Kanit:wght@600&family=Mitr:wght@500&family=Montserrat:wght@800;900&family=Open+Sans:wght@800&family=Patua+One&family=Prompt:wght@400;600&family=Raleway:wght@900&family=Roboto&family=Spectral:wght@700&family=Tilt+Neon&family=Unbounded:wght@800&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="my-header">
+            <nav>
+                <ul class="lista-desordenada-1">
+                    <li class="cero"><a href="Veterinaria-Katsuke.html" target="_blank"><img
+                                src="./static\img\opcion 1 radius.png" alt="cara de gato"
+                                class="logo"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="primero">
+            <h1 class="titulo">Veterinaria Katsuke</h1>
+            <h2 class="texto-sec">Especialidad en Medicina Felina</h2>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="form">
+            <h2 class="titulo1">Solicitud de estudios Complementarios</h2>
+            <form action="" class="formulario1" id="formulario1" method="get">
+                <fieldset>
+                    <legend><b> Ingrese sus datos (Tutor)</b></legend>
+                    <div class="contenedor-divs">
+                        <!-- Recuadro de nombre -->
+                        <div class="div-grupos">
+                            <label for="Nombre" class="nombre">Nombre</label>
+                            <div class="form-input">
+                                <input type="text" class="f-input" name="Nombre" id="Nombre" minlength="2" required>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-xs"
+                                    style="color: #ee95b0;"></i>
+                            </div>
+                            <p class="form-input-error">El usuario debe contener de 2-14 digitos y solo debe contener
+                                caracteres</p>
+                        </div>
+                        <br>
+                        <!-- Recuadro de apellido -->
+                        <div class="div-grupos">
+                            <label for="apellido">Apellido</label>
+                            <div class="form-input">
+                                <input type="text" name="apellido" id="apellido" minlength="2" required>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-xs"
+                                    style="color: #ee95b0;"></i>
+                            </div>
+                            <p class="form-input-error">El usuario debe contener de 2-14 digitos y solo debe contener
+                                caracteres</p>
+                        </div>
+                        <br>
+                        <!-- Recuadro de telefono -->
+                        <div class="div-grupos">
+                            <label for="Wsp" class="tel">Telefono</label>
+                            <div class="form-input">
+                                <input type="text" class="f-input" name="Wsp" id="Wsp" placeholder="Numero de telefono"
+                                    minlength="2" required>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-xs"
+                                    style="color: #ee95b0;"></i>
+                            </div>
+                            <p class="form-input-error">El telefono de contacto solo debe contener numeros</p>
+                        </div>
+                        <br>
+                        <!-- Recuadro de mail -->
+                        <div class="div-grupos">
+                            <label for="email" class="email">Email</label>
+                            <div class="form-input">
+                                <input type="email" class="f-input" name="email" id="email"
+                                    placeholder="Ingrese su email" required>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-xs"
+                                    style="color: #ee95b0;"></i>
+                            </div>
+                            <p class="form-input-error">El correo puede contener letras, numeros, puntos y guiones</p>
+                        </div>
+                        <br>
+                        <!-- Recuadro de localidad -->
+                        <div class="div-grupos">
+                            <label for="localidad" class="localidad">Localidad</label>
+                            <div class="form-input">
+                                <input type="text" name="localidad" id="localidad" minlength="2"
+                                    placeholder="Localidad en la que reside" required>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-xs"
+                                    style="color: #ee95b0;"></i>
+                            </div>
+                            <p class="form-input-error">El nombre de la localidad puede contener caracteres y numeros
+                            </p>
+                        </div>
+                        <br>
+                        <!-- Recuadro de Provincia -->
+                        <div class="div-grupos">
+                            <label for="Provincia" class="prov">Provincia</label>
+                            <div class="form-input">
+                                <input type="text" class="f-input" name="Provincia" id="Provincia"
+                                    placeholder="Provincia en la cual reside" minlength="2" required>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-xs"
+                                    style="color: #ee95b0;"></i>
+                            </div>
+                            <p class="form-input-error">El nombre de la provincia solo debe contener
+                                caracteres</p>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Datos del animal</b></legend>
+                    <div class="contenedor-2">
+                        <!-- Radio unica seleccion -->
+                        <legend class="especie">Especie Felino</legend>
+                        <label for="edad">Edad</label>
+                        <input type="number" name="edad" id="edad" min="0" max="20" required> años
+                        <br>
+                        <label for="raza">Raza: </label>
+                        <input type="radio" name="raza" value="Mestizo" id="radio1" required>
+                        <label for="radio1">Mestizo</label>
+
+                        <input type="radio" name="raza" value="Persa" id="radio2" required>
+                        <label for="radio2">Persa</label>
+
+                        <input type="radio" name="raza" value="Siames" id="radio3" required>
+                        <label for="radio3">Siames</label>
+
+                        <input type="radio" name="raza" value="Esfinge" id="radio4" required>
+                        <label for="radio4">Esfinge</label>
+
+                        <input type="radio" name="raza" value="Angora" id="radio5" required>
+                        <label for="radio5">Angora</label>
+
+                        <input type="radio" name="raza" value="Otro" id="radio6" required>
+                        <label for="radio6">Otro</label>
+
+                        <br>
+                        <!-- Conocimientos multiples cheksbox opciones multiples  -->
+                        <label for="Estudios Previos">Estudio Requerido: </label>
+                        <input type="checkbox" name="estudios" value="Radiografia">Radiografia
+                        <input type="checkbox" name="estudios" value="Ecografia">Ecografia
+                        <input type="checkbox" name="estudios" value="Laboratorio">Laboratorio
+                        <input type="checkbox" name="estudios" value="Ecocardiografia">Ecocardiografia
+                        <br>
+                        <!-- Recuadro -->
+                        <label for="turno">Seleccionar turno para el estudio: </label>
+                        <input type="date" name="fecha_turno" id="fecha_turno">
+                        <select name="turno" id="turno" required>
+                            <option value="vacio">Seleccione</option>
+                            <option value="1">Mañana</option>
+                            <option value="2">Mediodia</option>
+                            <option value="3">Tarde</option>
+                        </select>
+                        <br>
+                        <!-- Subir Orden Medica -->
+                        <label for="orden">Orden Medica: </label>
+                        <label for="foto">Adjuntar archivo: </label>
+                        <input type="file" name="orden" id="orden" required>
+                    </div>
+                </fieldset>
+                <br>
+                <!-- Recuadro de Comentarios -->
+                <div class="div-txr">
+                    <label for="comentarios" class="text-t"><b>Datos que el tutor considere de relevancia</b></label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" cols="65" rows="15"></textarea>
+                    <br>
+                    <!-- Boton error -->
+                    <div class="mensajeForm" id="mensajeForm">
+                        <p class="form-input-error"><i class="fa-solid fa-triangle-exclamation fa-xs"
+                                style="color: #d56290;"></i> <b>Error</b> Complete el formulario correctamente </p>
+                    </div>
+                    <!-- Boton enviar -->
+                    <div class="buttons">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                        <p class="envio_exito" id="envio_exito">El formulario se envió
+                            exitosamente
+                            !!!!!!</p>
+                    </div>
+
+                </div>
+
+            </form>
+        </section>
+        <section class="mapa">
+            <h2>Mapa</h2>
+            <div class="map-contenedor"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.78493132926!2d-58.42001819091707!3d-34.58430807284845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb581df66082f%3A0xd4cc7ed5dd1bba14!2sAv.%20Sta.%20Fe%203814%2C%20C1425BHA%20CABA!5e0!3m2!1ses-419!2sar!4v1698441931027!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer id="Contacto">
+        <div class="tercero">
+            <div class="redes">
+                <h4>Nuestras redes sociales</h4>
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #42769e;"></i>
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #ea6291;"></i>
+
+            </div>
+            <div class="foot">
+                <h3 class="contacto">Contacto</h3>
+                <ul class="lista-desordenada-3">
+                    <li>
+                        <h4><i class="fas fa-envelope"></i> Mail vet-katsuke@gmail.com</h4>
+                    </li>
+                    <li>
+                        <h4><i class="fab fa-whatsapp"></i> Whatsapp 1136679097</h4>
+                    </li>
+                    <li>
+                        <h4><i class="fas fa-map-marker-alt"></i> Avenida Santa Fe 3814 - CABA - Buenos Aires</h4>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="static\js\vet.js"></script>
+</body>
+
+</html>
